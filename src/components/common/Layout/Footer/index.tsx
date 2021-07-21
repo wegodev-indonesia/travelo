@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import Container from 'components/common/Container'
+import FooterInfo from './FooterInfo'
 
 import traveloLogo from 'public/assets/travelo-logo-footer.png'
 
@@ -21,27 +22,56 @@ const Footer = () => {
           </figure>
 
           <div className="flex flex-1 justify-between ml-[106px]">
-            <div className="flex flex-col">
-              <h2 className="text-gray-100 font-label font-bold text-heading-3 mb-4">Info</h2>
-              <a href="/" className="text-heading-4 text-gray-50 mb-3">Tentang kami</a>
-              <a href="/" className="text-heading-4 text-gray-50 mb-3">Testimonial</a>
-              <a href="/" className="text-heading-4 text-gray-50 mb-3">Kontak</a>
-            </div>
-            <div className="flex flex-col">
-              <h2 className="text-gray-100 font-label font-bold text-heading-3 mb-4">Perusahaan</h2>
-              <a href="/" className="text-heading-4 text-gray-50 mb-3">Syarat & Ketentuan</a>
-              <a href="/" className="text-heading-4 text-gray-50 mb-3">Kebijakan privasi</a>
-              <a href="/" className="text-heading-4 text-gray-50 mb-3">Blog</a>
-              <a href="/" className="text-heading-4 text-gray-50 mb-3">Bantuan pelayanan</a>
-            </div>
-            <div className="flex flex-col">
-              <h2 className="text-gray-100 font-label font-bold text-heading-3 mb-4">Kontak</h2>
-              <p className="text-heading-4 text-gray-50 mb-3">Jl. Dago No. 1A</p>
-              <p className="text-heading-4 text-gray-50 mb-3">Bandung, Jawa Barat</p>
-              <p className="text-heading-4 text-gray-50 mb-3">Indonesia</p>
-              <p className="text-heading-4 text-gray-50 mb-3">(022)8080808</p>
-              <p className="text-heading-4 text-gray-50 mb-3">contact@email.d</p>
-            </div>
+            <FooterInfo
+              title="Info"
+              content={[
+                {
+                  label: 'Tentang kami',
+                  href: '/'
+                },
+                {
+                  label: 'Testimonial',
+                  href: '/'
+                },
+                {
+                  label: 'Kontak',
+                  href: '/'
+                },
+              ]}
+            />
+
+            <FooterInfo
+              title="Perusahaan"
+              content={[
+                {
+                  label: 'Syarat & Ketentuan',
+                  href: '/'
+                },
+                {
+                  label: 'Kebijakan privasi',
+                  href: '/'
+                },
+                {
+                  label: 'Blog',
+                  href: '/'
+                },
+                {
+                  label: 'Bantuan pelayanan',
+                  href: '/'
+                },
+              ]}
+            />
+
+            <FooterInfo
+              title="Kontak"
+              content={[
+                'Jl. Dago No. 1A',
+                'Bandung, Jawa Barat',
+                'Indonesia',
+                '(022)8080808',
+                'contact@email.com'
+              ]}
+            />
           </div>
 
         </div>
