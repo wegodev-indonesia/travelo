@@ -6,7 +6,7 @@ import Button from 'components/common/Button'
 import Nav from './Nav'
 import Search from './Search'
 
-import traveloLogo from 'public/assets/travelo-logo.png'
+import traveloLogo from 'public/assets/travelo-logo-header.png'
 
 const Header = () => {
   return (
