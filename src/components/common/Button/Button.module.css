@@ -1,0 +1,3 @@
+.button {
+  @apply bg-blue-100 text-white p-3 w-[190px] text-heading-4 font-label font-bold rounded-md ml-5;
+}
