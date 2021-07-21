@@ -25,7 +25,7 @@ const Header = () => {
             <Search />
           </div>
 
-          <div className="flex">
+          <div className="flex gap-5">
             <Nav />
             <Button>
               Masuk
