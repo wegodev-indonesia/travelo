@@ -27,7 +27,7 @@ const Header = () => {
 
           <div className="flex gap-5">
             <Nav />
-            <Button>
+            <Button className="w-[190px]">
               Masuk
             </Button>
           </div>
