@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -36,32 +36,32 @@ module.exports = {
       white: '#FFFFFF',
       black: '#000000',
       yellow: {
-        '100': '#FDF5E8',
-        '200': '#F9E3BB',
-        '300': '#F5D18F',
-        '400': '#F1BF62',
-        '500': '#EBA41F',
+        '10': '#FDF5E8',
+        '30': '#F9E3BB',
+        '50': '#F5D18F',
+        '70': '#F1BF62',
+        '100': '#EBA41F',
       },
       red: {
-        '100': '#FDE8E9',
-        '200': '#F9BBBF',
-        '300': '#F58F95',
-        '400': '#F1626A',
-        '500': '#EB1F2B',
+        '10': '#FDE8E9',
+        '30': '#F9BBBF',
+        '50': '#F58F95',
+        '70': '#F1626A',
+        '100': '#EB1F2B',
       },
       blue: {
-        '100': '#E7EDF7',
-        '200': '#B7CBE9',
-        '300': '#87A9DB',
-        '400': '#5786CC',
-        '500': '#1053B7',
+        '10': '#E7EDF7',
+        '30': '#B7CBE9',
+        '50': '#87A9DB',
+        '70': '#5786CC',
+        '100': '#1053B7',
       },
       gray: {
-        '100': '#E6E6E7',
-        '200': '#B4B6B9',
-        '300': '#82868B',
-        '400': '#50555D',
-        '500': '#050D18',
+        '10': '#E6E6E7',
+        '30': '#B4B6B9',
+        '50': '#82868B',
+        '70': '#50555D',
+        '100': '#050D18',
       }
     }
   },
