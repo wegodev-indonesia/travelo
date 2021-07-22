@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import Button from 'components/common/Button'
 
-const CardPromo = () => {
+const PromoCard = () => {
   return (
     <article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex">
       <figure className="relative w-[212px] h-full]">
@@ -58,4 +58,4 @@ const CardPromo = () => {
   );
 };
 
-export default CardPromo
+export default PromoCard
