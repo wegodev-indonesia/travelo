@@ -1,4 +1,4 @@
-import PackageCard from "../PackageCard"
+import PackageCard from "./PackageCard"
 
 const Packages = () => {
   return (

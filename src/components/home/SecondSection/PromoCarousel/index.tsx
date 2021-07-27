@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel'
 
-import CardPromo from '../PromoCard'
+import CardPromo from './PromoCard'
 
 const PromoCarousel = () => {
   return (
