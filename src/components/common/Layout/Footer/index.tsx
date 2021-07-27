@@ -4,11 +4,13 @@ import Image from 'next/image'
 import Container from 'components/common/Container'
 import FooterInfo from './FooterInfo'
 
+import styles from './Footer.module.css'
+
 import traveloLogo from 'public/assets/travelo-logo-footer.png'
 
 const Footer = () => {
   return (
-    <footer className="shadow-2xl">
+    <footer className={styles.footer}>
       <Container size="lg">
         <div className="flex bg-white p-16">
           <figure>
