@@ -1,4 +1,4 @@
-import Container from 'components/common/Container'
+import Container from 'components/Container'
 import PromoCarousel from './PromoCarousel'
 import Packages from './Packages'
 import Categories from './Categories'

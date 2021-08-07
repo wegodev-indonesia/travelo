@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image'
 
-import Container from 'components/common/Container'
-import Button from 'components/common/Button'
+import Container from 'components/Container'
+import Button from 'components/Button'
 import Nav from './Nav'
 import Search from './Search'
 

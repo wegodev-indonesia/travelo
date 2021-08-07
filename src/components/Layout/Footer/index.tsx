@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import Container from 'components/common/Container'
+import Container from 'components/Container'
 import FooterInfo from './FooterInfo'
 
 import styles from './Footer.module.css'

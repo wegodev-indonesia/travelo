@@ -1,5 +1,5 @@
-import Container from 'components/common/Container'
-import Button from 'components/common/Button'
+import Container from 'components/Container'
+import Button from 'components/Button'
 import InfoItem from './InfoItem'
 
 import styles from './TopSection.module.css'
