@@ -1,3 +1,6 @@
-# Travelo Frontend Repository
+# Starter Folder
 
-Ini adalah repositori untuk frontend dari website Travelo. Traveling website yang akan menjadi studi kasus di course wegodev.
+Silahkan lakukan perubahan code dengan mengikuti tutorial di folder ini.
+Jangan lakukan perubahan pada Folder finish.
+
+Happy coding!
