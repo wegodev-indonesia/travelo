@@ -1,7 +1,0 @@
-.section {
-  @apply pb-16;
-  background-image: url('/assets/home/blue-bg-second-section.svg');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
