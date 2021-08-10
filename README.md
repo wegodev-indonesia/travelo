@@ -1,7 +1,5 @@
 # Travelo Frontend Repository
 
-# React Introduction
-
 #### 🎉 Selamat datang di repo course Travelo wegodev 🎉
 
 ### Petunjuk Menggunakan Repo:
