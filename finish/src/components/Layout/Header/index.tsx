@@ -10,7 +10,7 @@ import traveloLogo from 'public/assets/travelo-logo-header.png'
 
 const Header = () => {
   return (
-    <header className="h-[85px] bg-white shadow-lg p-4">
+    <header className="h-[85px] fixed left-0 right-0 top-0 bg-white shadow-lg p-4 z-20">
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex">

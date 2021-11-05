@@ -1,0 +1,20 @@
+.section {
+  @apply h-screen;
+  padding-top: 85px;
+  position: relative;
+
+  background-image: url('/assets/login/login-bg.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.formWrapper {
+  @apply flex-1 flex flex-col;
+
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 393px;
+}

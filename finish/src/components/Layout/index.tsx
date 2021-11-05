@@ -5,14 +5,15 @@ import Footer from './Footer'
 
 interface Props {
   children: ReactNode
+  noFooter?: boolean
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, noFooter = false }: Props) => {
   return (
     <>
       <Header />
       {children}
-      <Footer />
+      {noFooter ? null : <Footer />}
     </>
   )
 }

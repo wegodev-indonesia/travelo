@@ -1,0 +1,15 @@
+.label {
+  @apply relative text-heading-5 font-label font-bold w-full;
+}
+
+.input {
+  @apply border rounded-lg border-gray-70 text-heading-5 text-gray-50 py-3 px-4 w-full;
+}
+
+.eye {
+  @apply h-6 w-6 absolute;
+
+  transform: translate(-50%, -50%);
+  right: 0;
+  top: 70%;
+}

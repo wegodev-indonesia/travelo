@@ -1,6 +1,5 @@
 .button {
   @apply bg-blue-100 text-white p-3 h-[45px] text-heading-5 font-label font-bold rounded-md;
-  max-width: 190px;
 }
 
 .fullWidth {
