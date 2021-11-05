@@ -17,7 +17,11 @@ const PromoCarousel = () => {
         draggable
         swipeable
         customRightArrow={
-          <button type="button" aria-label="Go to next slide" className="absolute z-50 right-0 opacity-50 hover:opacity-100">
+          <button
+            type="button"
+            aria-label="Go to next slide"
+            className="absolute z-50 right-0 opacity-50 hover:opacity-100"
+          >
             <img
               src="/assets/icons/right-arrow-rounded.svg"
               height="75"
@@ -26,7 +30,11 @@ const PromoCarousel = () => {
           </button>
         }
         customLeftArrow={
-          <button type="button" aria-label="Go to previous slide" className="absolute z-50 left-0 opacity-50 hover:opacity-100">
+          <button
+            type="button"
+            aria-label="Go to previous slide"
+            className="absolute z-50 left-0 opacity-50 hover:opacity-100"
+          >
             <img
               src="/assets/icons/left-arrow-rounded.svg"
               height="75"
@@ -39,10 +47,10 @@ const PromoCarousel = () => {
           desktop: {
             breakpoint: {
               max: 3000,
-              min: 720
+              min: 720,
             },
             items: 2,
-            partialVisibilityGutter: 100
+            partialVisibilityGutter: 100,
           },
         }}
       >
@@ -53,7 +61,7 @@ const PromoCarousel = () => {
         <PromoCard />
       </Carousel>
     </>
-  );
-};
+  )
+}
 
 export default PromoCarousel

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
 interface Props {
   children: ReactNode
@@ -7,10 +7,14 @@ interface Props {
 
 const Container = ({ children, size = 'xl' }: Props) => {
   return (
-    <div className={`${size === 'xl' ? 'max-w-screen-xl' : 'max-w-screen-lg'} mx-auto`}>
+    <div
+      className={`${
+        size === 'xl' ? 'max-w-screen-xl' : 'max-w-screen-lg'
+      } mx-auto`}
+    >
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Container;
+export default Container

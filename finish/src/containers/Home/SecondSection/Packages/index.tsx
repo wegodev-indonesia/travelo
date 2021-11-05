@@ -1,4 +1,4 @@
-import PackageCard from "./PackageCard"
+import PackageCard from './PackageCard'
 
 const Packages = () => {
   return (
@@ -16,7 +16,7 @@ const Packages = () => {
         <PackageCard />
       </div>
     </>
-  );
-};
+  )
+}
 
 export default Packages

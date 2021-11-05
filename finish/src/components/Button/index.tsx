@@ -1,5 +1,5 @@
-import { ReactNode } from "react"
-import cn from "classnames"
+import { ReactNode } from 'react'
+import cn from 'classnames'
 
 import styles from './Button.module.css'
 
@@ -12,13 +12,15 @@ type Props = {
 
 const Button = ({ children, className = '', fullWidth, outlined }: Props) => {
   return (
-    <button className={cn(styles.button, className, {
-      [styles.fullWidth]: fullWidth,
-      [styles.outlined]: outlined
-    })}>
+    <button
+      className={cn(styles.button, className, {
+        [styles.fullWidth]: fullWidth,
+        [styles.outlined]: outlined,
+      })}
+    >
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Image from 'next/image'
 
 import Container from 'components/Container'
@@ -27,15 +27,12 @@ const Header = () => {
 
           <div className="flex gap-5">
             <Nav />
-            <Button className="w-[190px]">
-              Masuk
-            </Button>
+            <Button className="w-[190px]">Masuk</Button>
           </div>
-
         </div>
       </Container>
     </header>
-  );
-};
+  )
+}
 
 export default Header

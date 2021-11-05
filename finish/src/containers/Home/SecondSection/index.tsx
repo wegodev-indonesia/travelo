@@ -17,7 +17,7 @@ const SecondSection = () => {
         <Testimonials />
       </Container>
     </section>
-  );
-};
+  )
+}
 
 export default SecondSection

@@ -29,15 +29,15 @@ const Footer = () => {
               content={[
                 {
                   label: 'Tentang kami',
-                  href: '/'
+                  href: '/',
                 },
                 {
                   label: 'Testimonial',
-                  href: '/'
+                  href: '/',
                 },
                 {
                   label: 'Kontak',
-                  href: '/'
+                  href: '/',
                 },
               ]}
             />
@@ -47,19 +47,19 @@ const Footer = () => {
               content={[
                 {
                   label: 'Syarat & Ketentuan',
-                  href: '/'
+                  href: '/',
                 },
                 {
                   label: 'Kebijakan privasi',
-                  href: '/'
+                  href: '/',
                 },
                 {
                   label: 'Blog',
-                  href: '/'
+                  href: '/',
                 },
                 {
                   label: 'Bantuan pelayanan',
-                  href: '/'
+                  href: '/',
                 },
               ]}
             />
@@ -71,11 +71,10 @@ const Footer = () => {
                 'Bandung, Jawa Barat',
                 'Indonesia',
                 '(022)8080808',
-                'contact@email.com'
+                'contact@email.com',
               ]}
             />
           </div>
-
         </div>
       </Container>
 
@@ -85,7 +84,7 @@ const Footer = () => {
         </p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

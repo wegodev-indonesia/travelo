@@ -29,18 +29,16 @@ const TestimonialCard = () => {
       <Rating />
 
       <p className="text-heading-5 text-gray-70 my-4">
-        Nyari makanan halal gampang banget udah ada tour guidenya. tour guidenya juga ramah enak diajak ngobrol, dan penginapannya pun nyaman
+        Nyari makanan halal gampang banget udah ada tour guidenya. tour guidenya
+        juga ramah enak diajak ngobrol, dan penginapannya pun nyaman
       </p>
 
       <p className="text-heading-5 text-gray-100 font-bold">
         Nusa Penida, Bali
       </p>
-      <p className="text-heading-6 text-gray-50">
-        17-10-2020
-      </p>
-
+      <p className="text-heading-6 text-gray-50">17-10-2020</p>
     </article>
-  );
-};
+  )
+}
 
-export default TestimonialCard;
+export default TestimonialCard

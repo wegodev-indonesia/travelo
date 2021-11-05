@@ -14,14 +14,10 @@ const Search = () => {
         className="flex justify-center items-center bg-blue-100 border border-blue-100 text-white text-sm rounded-r-md h-[46px] w-[46px]"
         type="submit"
       >
-        <Image
-          src={searchIcon}
-          height="24"
-          width="24"
-        />
+        <Image src={searchIcon} height="24" width="24" />
       </button>
     </form>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search

@@ -1,4 +1,4 @@
-import CategoryCard from "./CategoryCard"
+import CategoryCard from './CategoryCard'
 
 const Categories = () => {
   return (
@@ -13,7 +13,7 @@ const Categories = () => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}
 
 export default Categories

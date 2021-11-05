@@ -1,4 +1,4 @@
-import HomeContainers from "containers/Home"
+import HomeContainers from 'containers/Home'
 
 export default function IndexPage() {
   return <HomeContainers />

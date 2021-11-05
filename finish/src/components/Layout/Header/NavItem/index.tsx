@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 type Props = {
-  label: string,
+  label: string
   href: string
 }
 
@@ -12,7 +12,7 @@ const NavItem = ({ label, href = '/' }: Props) => {
         {label}
       </a>
     </Link>
-  );
-};
+  )
+}
 
-export default NavItem;
+export default NavItem

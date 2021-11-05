@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
 type Props = {
-  title: string,
+  title: string
   content: Content[] | string[]
 }
 
 type Content = {
-  label: string,
+  label: string
   href: string
 }
 
@@ -20,9 +20,7 @@ const FooterInfo = ({ title, content }: Props) => {
         if (typeof item !== 'string') {
           return (
             <Link href={item.href} key={index}>
-              <a className="text-heading-4 text-gray-50 mb-3">
-                {item.label}
-              </a>
+              <a className="text-heading-4 text-gray-50 mb-3">{item.label}</a>
             </Link>
           )
         }
@@ -34,7 +32,7 @@ const FooterInfo = ({ title, content }: Props) => {
         )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default FooterInfo;
+export default FooterInfo

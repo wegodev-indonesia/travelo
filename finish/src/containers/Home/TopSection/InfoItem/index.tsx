@@ -9,11 +9,8 @@ const InfoItem = ({ label, subLabel }: Props) => {
       <p className="text-gray-100 text-heading-2 font-label font-bold mb-2">
         {label}
       </p>
-      <p className="text-heading-4 text-gray-70 font-bold">
-        {subLabel}
-      </p>
+      <p className="text-heading-4 text-gray-70 font-bold">{subLabel}</p>
     </div>
-  );
-
+  )
 }
 export default InfoItem

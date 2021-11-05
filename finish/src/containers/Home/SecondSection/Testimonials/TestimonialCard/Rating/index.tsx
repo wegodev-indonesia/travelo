@@ -14,7 +14,7 @@ const Rating = () => {
         )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default Rating;
+export default Rating

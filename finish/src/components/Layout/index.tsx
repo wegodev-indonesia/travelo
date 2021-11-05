@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
 import Header from './Header'
 import Footer from './Footer'
@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
       {children}
       <Footer />
     </>
-  );
+  )
 }
 
 export default Layout

@@ -19,17 +19,13 @@ const PromoCard = () => {
         <p className="text-heading-4 text-gray-100 font-label font-bold">
           Borobudur, Yogyakarta
         </p>
-        <p className="text-heading-4 text-gray-70 mb-4">
-          Indonesia
-        </p>
+        <p className="text-heading-4 text-gray-70 mb-4">Indonesia</p>
 
         <div className="flex gap-1">
           <p className="text-heading-5 text-gray-70 line-through">
             Rp. 7.700.000
           </p>
-          <p className="text-heading-5 text-red-100 font-bold">
-            10%
-          </p>
+          <p className="text-heading-5 text-red-100 font-bold">10%</p>
         </div>
 
         <p className="text-[16px] font-bold text-gray-100 mb-4">
@@ -37,7 +33,8 @@ const PromoCard = () => {
         </p>
 
         <p className="text-heading-5 text-gray-70 mb-4">
-          Untuk 2 Orang, tiket pesawat, Tempat penginapan 5 malam,  tour guide, mak...
+          Untuk 2 Orang, tiket pesawat, Tempat penginapan 5 malam, tour guide,
+          mak...
         </p>
 
         <p className="text-heading-5 text-gray-50 mb-4">
@@ -48,14 +45,11 @@ const PromoCard = () => {
           <Button fullWidth outlined>
             Lihat detail
           </Button>
-          <Button fullWidth>
-            Pesan
-          </Button>
+          <Button fullWidth>Pesan</Button>
         </div>
       </div>
-
     </article>
-  );
-};
+  )
+}
 
 export default PromoCard

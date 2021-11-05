@@ -13,11 +13,9 @@ const CategoryCard = () => {
         />
       </figure>
 
-      <p className="text-heading-3 text-gray-100 font-bold">
-        Gunung
-      </p>
+      <p className="text-heading-3 text-gray-100 font-bold">Gunung</p>
     </article>
-  );
-};
+  )
+}
 
 export default CategoryCard
