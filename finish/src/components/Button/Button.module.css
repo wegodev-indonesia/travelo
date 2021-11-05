@@ -1,5 +1,5 @@
 .button {
-  @apply bg-blue-100 text-white p-3 h-[45px] text-heading-5 font-label font-bold rounded-md;
+  @apply text-white p-3 h-[45px] text-heading-4 font-label font-bold rounded-md flex justify-center items-center;
 }
 
 .fullWidth {

@@ -3,7 +3,7 @@ import type { InputHTMLAttributes } from 'react'
 import { useState } from 'react'
 import clsx from 'clsx'
 
-import { EyeIcon, EyeOffIcon } from '@heroicons/react/solid'
+import { FaEye, FaEyeSlash } from 'react-icons/fa'
 import styles from './Input.module.css'
 
 type Props = {
@@ -43,9 +43,9 @@ const Input = ({ name, type, label, placeholder, className }: Props) => {
       {type === 'password' ? (
         <button type="button" className={styles.eye} onClick={handleEyeClick}>
           {hidePassword ? (
-            <EyeOffIcon className="h-6 w-6 text-gray-100" />
+            <FaEyeSlash className="h-6 w-6 text-gray-100" />
           ) : (
-            <EyeIcon className="h-6 w-6 text-gray-100" />
+            <FaEye className="h-6 w-6 text-gray-100" />
           )}
         </button>
       ) : null}

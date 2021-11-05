@@ -39,6 +39,7 @@ module.exports = {
       },
       white: '#FFFFFF',
       black: '#000000',
+      facebook: '#4267B2',
       yellow: {
         10: '#FDF5E8',
         30: '#F9E3BB',
