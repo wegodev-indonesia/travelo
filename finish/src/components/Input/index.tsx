@@ -43,9 +43,9 @@ const Input = ({ name, type, label, placeholder, className }: Props) => {
       {type === 'password' ? (
         <button type="button" className={styles.eye} onClick={handleEyeClick}>
           {hidePassword ? (
-            <EyeOffIcon className="h-6 w-6" />
+            <EyeOffIcon className="h-6 w-6 text-gray-100" />
           ) : (
-            <EyeIcon className="h-6 w-6" />
+            <EyeIcon className="h-6 w-6 text-gray-100" />
           )}
         </button>
       ) : null}
