@@ -1,4 +1,4 @@
-import type { InputHTMLAttributes } from 'react'
+import type { InputProps } from './interfaces'
 
 import { useState } from 'react'
 import clsx from 'clsx'
@@ -6,17 +6,20 @@ import clsx from 'clsx'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
 import styles from './Input.module.css'
 
-type Props = {
-  name: InputHTMLAttributes<HTMLInputElement>['name']
-  type: InputHTMLAttributes<HTMLInputElement>['type']
-  label: string
-  placeholder: string
-  className?: string
-}
-
-const Input = ({ name, type, label, placeholder, className }: Props) => {
+const Input = ({
+  name,
+  type,
+  label,
+  placeholder,
+  className,
+  register,
+  errors,
+  required,
+}: InputProps) => {
   const [hidePassword, setHidePassword] = useState(false)
   const [inputType, setInputType] = useState(type)
+  const isInputError = errors && errors[name]
+  const inputErrorHint = `${name}-input-error-hint`
 
   const handleEyeClick = () => {
     setHidePassword((prevState) => !prevState)
@@ -33,21 +36,35 @@ const Input = ({ name, type, label, placeholder, className }: Props) => {
       <div className="mb-3">{label}</div>
 
       <input
-        className={styles.input}
+        {...register(name, {
+          required,
+        })}
+        className={clsx(styles.input, isInputError && styles.inputError)}
         type={inputType}
         name={name}
         id={name}
         placeholder={placeholder}
+        aria-describeby={inputErrorHint}
       />
 
       {type === 'password' ? (
-        <button type="button" className={styles.eye} onClick={handleEyeClick}>
+        <button
+          type="button"
+          className={clsx(styles.eye, isInputError && styles.eyeError)}
+          onClick={handleEyeClick}
+        >
           {hidePassword ? (
             <FaEyeSlash className="h-6 w-6 text-gray-100" />
           ) : (
             <FaEye className="h-6 w-6 text-gray-100" />
           )}
         </button>
+      ) : null}
+
+      {isInputError ? (
+        <span id={inputErrorHint} className="text-xs text-red-100 mt-1 ml-3">
+          {errors[name].message}
+        </span>
       ) : null}
     </label>
   )

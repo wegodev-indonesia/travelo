@@ -2,9 +2,12 @@ import Layout from 'components/Layout'
 import Input from 'components/Input'
 import Button from 'components/Button'
 
+import { useComponentLogic } from './hooks'
 import styles from './Login.module.css'
 
 const Login = () => {
+  const { register, handleSubmit, onSubmit, errors } = useComponentLogic()
+
   return (
     <Layout noFooter>
       <section className={styles.section}>
@@ -16,14 +19,20 @@ const Login = () => {
             </p>
             <a
               href="#"
-              className="text-heading-5 text-blue-100 font-semibold ml-2"
+              className="text-heading-5 text-blue-100 font-semibold ml-2 hover:underline"
             >
               Daftar di sini
             </a>
           </div>
 
-          <form className="flex flex-col mt-8">
+          <form
+            className="flex flex-col mt-8"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <Input
+              register={register}
+              errors={errors}
+              required={{ value: true, message: 'Alamat email harus diisi.' }}
               label="Email"
               type="email"
               name="email"
@@ -31,6 +40,9 @@ const Login = () => {
               className="mb-6"
             />
             <Input
+              register={register}
+              errors={errors}
+              required={{ value: true, message: 'Password harus diisi.' }}
               label="Kata sandi"
               type="password"
               name="password"
@@ -39,7 +51,7 @@ const Login = () => {
 
             <a
               href="#"
-              className="text-heading-5 text-blue-100 font-semibold mt-8 mb-4"
+              className="text-heading-5 text-blue-100 font-semibold mt-8 mb-4 hover:underline"
             >
               Lupa kata sandi?
             </a>

@@ -3,7 +3,8 @@
 }
 
 .input {
-  @apply border rounded-lg border-gray-70 text-heading-5 text-gray-50 py-3 px-4 w-full;
+  @apply appearance-none border rounded-lg border-gray-70 text-heading-5 text-gray-50 py-3 px-4 w-full;
+  @apply focus:outline-none focus:ring-blue-100 focus:border-blue-100;
 }
 
 .eye {
@@ -12,4 +13,8 @@
   transform: translate(-50%, -50%);
   right: 0;
   top: 70%;
+}
+
+.eyeError {
+  top: 56%;
 }
