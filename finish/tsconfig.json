@@ -17,6 +17,7 @@
     "paths": {
       "components/*": ["./src/components/*"],
       "containers/*": ["./src/containers/*"],
+      "constants/*": ["./src/constants/*"],
       "public/*": ["./public/*"]
     }
   },

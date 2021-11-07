@@ -15,6 +15,8 @@ const Input = ({
   register,
   errors,
   required,
+  pattern,
+  minLength,
 }: InputProps) => {
   const [hidePassword, setHidePassword] = useState(false)
   const [inputType, setInputType] = useState(type)
@@ -38,7 +40,10 @@ const Input = ({
       <input
         {...register(name, {
           required,
+          pattern,
+          minLength,
         })}
+        formNoValidate
         className={clsx(styles.input, isInputError && styles.inputError)}
         type={inputType}
         name={name}

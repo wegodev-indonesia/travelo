@@ -14,4 +14,6 @@ export type InputProps = {
   register: UseFormRegister<any>
   errors?: FieldErrors
   required?: string | ValidationRule<boolean>
+  pattern?: ValidationRule<RegExp>
+  minLength?: ValidationRule<string | number>
 }
